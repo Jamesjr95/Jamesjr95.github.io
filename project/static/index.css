@@ -46,12 +46,13 @@
 
 .welcome-msg h1 {
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 500;
   margin-bottom: 30px;
+  
 }
 
 .highlight {
-  color: red;
+  color:tomato
 }
 
 .btn {
@@ -69,8 +70,8 @@
 }
 
 .btn:hover {
-  border: 2px solid;
-  color: white;
+  border: 1px solid;
+  color: rgba(255, 255, 255, 0.602);
   background: rgba(200, 200, 193, 0.335);
   transition: 1s;
   opacity: 0.5;
@@ -103,11 +104,11 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  color: red;
+  color: tomato;
 }
 
 .active {
-  background-color: red;
+  background-color: tomato;
 }
 
 .navbar {
@@ -119,15 +120,18 @@ li a:hover {
 
 .flex-container1 {
   display: flex;
-  height: 150px;
+  height: 250px;
   justify-content: center;
-  text-decoration: underline;
+  
+  
 }
 
 .flex-container1 > div {
+  height: 250px;
   display: flex;
   font-size: 3rem;
-  padding: 30px;
+  text-decoration: underline;
+  
 }
 
 .flex-container2 {
@@ -140,11 +144,12 @@ li a:hover {
 }
 
 .flex-container2 > li {
-  width: 10%;
+  width: 20%;
+  
 }
 
 .flex-container2 > img {
-  width: 80%;
+  width: 300px;
 }
 
 .flex-container3 {
@@ -187,42 +192,44 @@ li a:hover {
   width: 50px;
 }
 .fa-facebook {
-  background: #3b5998;
+  background: #3b589811;
   color: white;
 }
 .fa-twitter {
-  background: #55acee;
+  background: #3b589811;
   color: white;
+  
 }
 .fa-pinterest {
-  background: #cb2027;
+  background: #3b589811;
   color: white;
 }
 .fa-linkedin {
-  background: #007bb5;
+  background: #3b589811;
   color: white;
 }
 .fa-instagram {
-  background: #125688;
+  background: #3b589811;
   color: white;
 }
 .fa-youtube {
-  background: #bb0000;
+  background: #3b589811;
   color: white;
 }
 .fa-google {
-  background: #dd4b39;
+  background: #3b589811;
   color: white;
 }
 .fa-snapchat-ghost {
-  background: #fffc00;
+  background: #3b589811;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .fa-skype {
-  background: #00aff0;
+  background: #3b589811;
   color: white;
 }
 .fa:hover {
+  background-color: rgba(255, 255, 255, 0.219);
   opacity: 0.9;
 }
