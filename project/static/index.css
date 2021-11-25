@@ -42,7 +42,6 @@
   justify-content: center;
   text-align: center;
   color: white;
-  
 }
 
 .welcome-msg h1 {
@@ -67,8 +66,6 @@
   font-family: "Merriweather Sans", sans-serif;
   font-size: 20px;
   width: 250px;
-  
-  
 }
 
 .btn:hover {
@@ -80,13 +77,11 @@
 }
 
 ul {
-  
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #1b242f;
-  
 }
 
 li {
@@ -119,49 +114,111 @@ li a:hover {
   padding: 0;
 }
 
-.flex-container1{
-  
+.flex-container1 {
   display: flex;
-  background-color: #ffffff;
-  height: 250px;
-  
-  justify-content:center;
-  align-items: center;
-  height: 100%;
+  height: 150px;
+  justify-content: center;
   text-decoration: underline;
 }
 
-.flex-container1 > div{
+.flex-container1 > div {
   display: flex;
-  background-color: #f1f1f1;
   font-size: 3rem;
   padding: 30px;
-
-  
 }
 
-.flex-container2{
+.flex-container2 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   justify-content: space-between;
   text-align: center;
-  
 }
 
-.flex-container2 > li{
+.flex-container2 > li {
   width: 10%;
- 
-  
 }
 
-.flex-container3{
+.flex-container2 > img{
+  width: 80%;
+}
+
+.flex-container3 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   height: 250px;
-  
 }
 
-.flex-container3 > div{
+.flex-container3 > div {
+  height: 250px;
   font-size: 3rem;
   text-decoration: underline;
 }
+
+.flex-container4 {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  background-color: #252934;
+}
+
+.flex-container4 > div {
+  font-size: 3rem;
+  height: 250px;
+  text-decoration: underline;
+  
+}
+
+.flex-container5{
+  display: flex;
+  justify-content: center;
+  background-color: #252934;
+
+}
+
+.fa {  
+  padding: 20px;  
+text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 50px;  
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}  
+.fa-twitter {  
+  background: #55ACEE;  
+  color: white;  
+}  
+.fa-pinterest {  
+  background: #cb2027;  
+  color: white;  
+}  
+.fa-linkedin {  
+  background: #007bb5;  
+  color: white;  
+}  
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;  
+}  
+.fa-google {  
+  background: #dd4b39;  
+  color: white;  
+}  
+.fa-snapchat-ghost {  
+  background: #fffc00;  
+  color: white;  
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}  
+.fa-skype {  
+  background: #00aff0;  
+  color: white;  
+}  
+.fa:hover {  
+    opacity: 0.9;  
+}  
