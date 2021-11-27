@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:wght@300&family=Playfair+Display&family=Raleway:wght@100;200&display=swap");
+
+
+
+body{
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    background-color: #505962;
+
+}
+
+
+/* navigation */
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.navbar nav li{
+    padding-right: .7rem;
+    
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: red;
+
+}
+
+/* landing page */
+
+.home-inner{
+    background-image: url(./media/misael-moreno-Ev85w3dgfmc-unsplash.jpg);
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: rgb(97, 36, 36);
+    text-transform: uppercase;
+}
+
+.caption h1{
+    font-size: 1.8rem;
+    font-family: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    background-color: black;
+}
