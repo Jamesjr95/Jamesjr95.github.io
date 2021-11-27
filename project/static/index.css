@@ -5,10 +5,16 @@
 body{
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
-    background-color: #505962;
+    
 
 }
 
+.offset::before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
 
 /* navigation */
 
@@ -17,7 +23,7 @@ body{
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.068);
     
 }
 
@@ -29,6 +35,7 @@ body{
 
 .navbar-dark .navbar-nav .nav-link{
     color: white;
+    font-weight: 300;
     padding-top: .8rem;
 }
 
@@ -40,9 +47,18 @@ body{
 
 /* landing page */
 
-.home-inner{
-    background-image: url(./media/misael-moreno-Ev85w3dgfmc-unsplash.jpg);
+
+
+.container-fluid{
+    position: relative;
+    background: url(./media/daniel-sessler-vt-L-TPxXVU-unsplash.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+   
 }
+
 
 .caption{
     width: 100%;
@@ -64,9 +80,130 @@ body{
 
 
 .btn-lg {
+    color: rgba(255, 255, 255, 0.801);
     border-width: medium;
     border-radius: 0;
     padding: .6rem 1.3rem;
     font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.445);
+    
+}
+
+.btn-lg:hover{
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+/* about section */
+
+.narrow{
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.narrow h1{
+    font-size: 2.4rem;
+}
+
+
+/* project section */
+
+.jumbotron{
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+
+
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+
+}
+
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
     background-color: black;
+    margin: 0 auto 2rem;
+}
+
+#about{
+    background-color: #ffffff;
+}
+.about h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+    padding-top: .4rem;
+}
+
+.about p{
+    font-size: 1.1rem;
+}
+
+
+
+
+/* project section */
+
+#portfolio{
+    height: 90vh;
+}
+
+
+.portfolio h3{
+    font-size: 1.3rem;
+    
+}
+
+
+/* contact section */
+
+footer{
+    background-color: #252934;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: white;
+    
+}
+
+
+#icon:hover{
+    color: #e31b6d;
+
+}
+
+
+hr.socket{
+    width: 100%;
+    border-top: .2rem solid gray;
+    margin-top: 3rem;
+}
+
+/* media queries */
+
+@media (max-width: 767px){
+    .caption h1{
+        font-size: 1.3rem;
+        
+        letter-spacing: .15rem;
+        
+        padding-bottom: .5rem;
+    }
+    
+    
+    .btn-lg {
+        
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        background-color: black;
+    }
+    
 }
