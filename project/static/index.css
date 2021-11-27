@@ -27,21 +27,26 @@ body{
     
 }
 
+
 .navbar nav li{
     padding-right: .7rem;
-    
+    transition-delay:  3s;
+    text-decoration: underline;
 }
 
 
 .navbar-dark .navbar-nav .nav-link{
-    color: white;
+    /* color: white; */
     font-weight: 300;
     padding-top: .8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: red;
+    
+    text-decoration: underline;
+    
+    
 
 }
 
@@ -66,16 +71,18 @@ body{
     position: absolute;
     top: 38%;
     z-index: 1;
-    color: rgb(97, 36, 36);
+    color: black;
     text-transform: uppercase;
+    
 }
 
 .caption h1{
     font-size: 1.8rem;
-    font-family: 700;
+    /* font-family: 700; */
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem .8rem black;
     padding-bottom: 1rem;
+    font-weight: 300;
 }
 
 
