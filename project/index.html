@@ -24,24 +24,26 @@
   </head>
 
   <body data-spy="scroll" data-target="#navbarResponsive">
-    
     <!-- start home section -->
     <div id="home"></div>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top ">
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="navbar-collapse collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto ">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -56,20 +58,22 @@
       </div>
     </nav>
     <video autoplay muted loop id="myVideo">
-      <source src="./static/media/pexels-cottonbro-9665235.mp4" type="video/mp4">
+      <source
+        src="./static/media/pexels-cottonbro-9665235.mp4"
+        type="video/mp4"
+      />
     </video>
 
     <!-- end of navigation -->
 
     <!-- start landing page section -->
     <div class="container-fluid">
-      
       <div class="caption text-center">
         <h1>
           Hello, I'm <span>James</span>.<br />
           I'm a Software Developer.
         </h1>
-        <a  class="btn outline-light btn-lg" href="#portfolio">View my work</a>
+        <a class="btn outline-light btn-lg" href="#portfolio">View my work</a>
       </div>
     </div>
     <!-- end landing page section -->
