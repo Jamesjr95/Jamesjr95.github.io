@@ -1,60 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:wght@300&family=Playfair+Display&family=Raleway:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Playfair+Display&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@500&family=Playfair+Display&display=swap");
 
-body{
-    overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
-    
-
+* {
+  font-family: 'Dosis', sans-serif;
 }
 
-.offset::before{
-    display: block;
-    content: "";
-    height: 4rem;
-    margin-top: -4rem;
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
 }
 
 /* navigation */
-
-.navbar{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background-color: rgba(0, 0, 0, 0.068);
-    
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.034);
 }
 
-
-.navbar nav li{
-    padding-right: .7rem;
-    transition-delay:  3s;
-    text-decoration: underline;
+.navbar {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  /* background-color: rgba(0, 0, 0, 0.068); */
 }
 
+.navbar nav li {
+  padding-right: 0.7rem;
+}
 
-.navbar-dark .navbar-nav .nav-link{
-    /* color: white; */
-    font-weight: 300;
-    padding-top: .8rem;
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+  padding-top: 0.8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
-    
-    text-decoration: underline;
-    
-    
-
+.navbar-dark .navbar-nav .nav-link:hover {
+  transition-delay: 0.2s;
+  color: grey;
 }
 
 /* landing page */
 
-
-
-.container-fluid{
+/* .container-fluid{
     position: relative;
     background: url(./media/daniel-sessler-vt-L-TPxXVU-unsplash.jpg);
     min-height: 100vh;
@@ -62,155 +53,149 @@ body{
     background-position: center;
     
    
+} */
+
+#myVideo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
-
-.caption{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 38%;
-    z-index: 1;
-    color: black;
-    text-transform: uppercase;
-    
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  color: white;
+  text-transform: uppercase;
 }
 
-.caption h1{
-    font-size: 1.8rem;
-    /* font-family: 700; */
-    letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem black;
-    padding-bottom: 1rem;
-    font-weight: 300;
+.caption h1 {
+  font-size: 30pt;
+  line-height: 36pt;
+  letter-spacing: 0.1rem;
+  /* text-shadow: 0.1rem 0.1rem 0.8rem black; */
+  padding-bottom: 1rem;
 }
 
+span{
+    color: red;
+}
 
 .btn-lg {
-    color: rgba(255, 255, 255, 0.801);
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    background-color: rgba(0, 0, 0, 0.445);
-    
+  color: rgba(255, 255, 255, 0.801);
+  border-width: thin;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: white;
+  opacity: .9;
 }
 
-.btn-lg:hover{
-    background-color: rgba(255, 255, 255, 0.397);
+.btn-lg:hover {
+  transition-delay: 0.2s;
+  background-color: rgba(255, 255, 255, 0.226);
 }
 
 /* about section */
 
-.narrow{
-    width: 75%;
-    margin: 1.5rem auto;
-    padding-top: 2rem;
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
 }
 
-.narrow h1{
-    font-size: 2.4rem;
+.narrow h1 {
+  font-size: 2.4rem;
 }
-
 
 /* project section */
 
-.jumbotron{
-    margin-bottom: 0;
-    padding: 2rem 0 3.5rem;
-    border-radius: 0;
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
 }
 
-
-h3.heading{
-    font-size: 1.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1.9rem;
-
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
 }
 
-.heading-underline{
-    width: 3rem;
-    height: .2rem;
-    background-color: black;
-    margin: 0 auto 2rem;
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: black;
+  margin: 0 auto 2rem;
 }
 
-#about{
+/* #about{
     background-color: #ffffff;
-}
-.about h3{
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    padding-bottom: .4rem;
-    padding-top: .4rem;
-}
-
-.about p{
-    font-size: 1.1rem;
+} */
+.about h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
 }
 
-
-
+.about p {
+  font-size: 1.1rem;
+}
 
 /* project section */
 
-#portfolio{
-    height: 90vh;
+#portfolio {
+  height: 90vh;
 }
 
-
-.portfolio h3{
-    font-size: 1.3rem;
-    
+.portfolio h3 {
+  font-size: 1.3rem;
 }
-
 
 /* contact section */
 
-footer{
-    background-color: #252934;
-    color: white;
-    padding: 2rem 0 2rem;
-    margin-top: 1rem;
+footer {
+  background-color: #252934;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
 }
 
-footer a{
-    color: white;
-    
+footer a {
+  color: white;
 }
 
-
-#icon:hover{
-    color: #e31b6d;
-
+#icon:hover {
+  color: #e31b6d;
 }
 
-
-hr.socket{
-    width: 100%;
-    border-top: .2rem solid gray;
-    margin-top: 3rem;
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid gray;
+  margin-top: 3rem;
 }
 
 /* media queries */
 
-@media (max-width: 767px){
-    .caption h1{
-        font-size: 1.3rem;
-        
-        letter-spacing: .15rem;
-        
-        padding-bottom: .5rem;
-    }
-    
-    
-    .btn-lg {
-        
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        background-color: black;
-    }
-    
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 1.3rem;
+
+    letter-spacing: 0.15rem;
+
+    padding-bottom: 0.5rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: black;
+  }
 }

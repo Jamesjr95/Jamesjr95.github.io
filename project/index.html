@@ -22,16 +22,19 @@
       crossorigin="anonymous"
     />
   </head>
-  
+
   <body data-spy="scroll" data-target="#navbarResponsive">
     
     <!-- start home section -->
-    <div id="home">
-    
-    </div>
+    <div id="home"></div>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -52,85 +55,88 @@
         </ul>
       </div>
     </nav>
-      
-    
+    <video autoplay muted loop id="myVideo">
+      <source src="./static/media/pexels-cottonbro-9665235.mp4" type="video/mp4">
+    </video>
+
     <!-- end of navigation -->
-    
+
     <!-- start landing page section -->
     <div class="container-fluid">
-     
-     
-
-    <div class="caption text-center">
       
-      <h1>Hello, I'm James.<br> I'm a Software Developer.</h1>
-      <a class="btn outline-light btn-lg" href="project">View my work</a>
+      <div class="caption text-center">
+        <h1>
+          Hello, I'm <span>James</span>.<br />
+          I'm a Software Developer.
+        </h1>
+        <a  class="btn outline-light btn-lg" href="#portfolio">View my work</a>
+      </div>
     </div>
-  </div>
     <!-- end landing page section -->
-    
+
     <!-- end home section -->
 
-    <!-- start course section -->
-    <!-- <div id="about" class="offset">
+    <!-- start about section -->
+    <div id="about" class="col-12 narrow text-center" class="offset">
+      <!-- start jumbotron -->
+      <div class="jumbotron">
+        <div class="narrow">
+          <div class="col-12">
+            <h3 class="heading">About</h3>
+            <div class="heading-underline"></div>
+          </div>
 
-      <div class="col-12 narrow text-center">
-        <h1>About</h1>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="about">
+                <i
+                  class="fas fa-users fa-4x"
+                  data-fa-transform="shrink-3 up-5"
+                ></i>
+                <h3>Team player</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ducimus, harum.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about">
+                <i
+                  class="fas fa-graduation-cap fa-4x"
+                  data-fa-transform="shrink-3 up-5"
+                ></i>
+                <h3>Love learning</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ducimus, harum.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about">
+                <i
+                  class="fas fa-puzzle-piece fa-4x"
+                  data-fa-transform="shrink-3 up-5"
+                ></i>
+                <h3>Love solving puzzles</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ducimus, harum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end narrow -->
       </div>
-
-    </div> -->
-
-    <!-- end course section -->
-
-
-    <!-- start features section -->
-    <div id="about"  class="col-12 narrow text-center" class="offset">
-    <!-- start jumbotron -->
-    <div class="jumbotron">
-    <div class="narrow">
-      <div class="col-12">
-        <h3 class="heading">About</h3>
-        <div class="heading-underline"></div>
-      </div>
-      
-      <div class="row text-center">
-        
-        <div class="col-md-4">
-          <div class="about">
-            <i class="fas fa-users fa-4x" data-fa-transform="shrink-3 up-5"></i>
-            <h3>Team player</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, harum.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="about">
-            <i class="fas fa-graduation-cap fa-4x" data-fa-transform="shrink-3 up-5"></i>
-            <h3>Love learning</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, harum.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="about">
-            <i class="fas fa-puzzle-piece fa-4x" data-fa-transform="shrink-3 up-5"></i>
-            <h3>Love solving puzzles</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, harum.</p>
-          </div>
-        </div>
-
-
-        </div> <!-- end of row -->
-      
-    
-    
-    </div> <!-- end narrow -->
-    </div> <!-- end jumbotron  -->
-    
+      <!-- end jumbotron  -->
     </div>
-    <!-- end features section -->
+    <!-- end about section -->
 
-    <!-- start resources section -->
+    <!-- start portfolio section -->
     <div id="portfolio" class="offset">
-      
       <div class="col-12 text-center">
         <h3 class="heading">Portfolio</h3>
         <div class="heading-underline"></div>
@@ -142,45 +148,28 @@
           <i class="fas fa-code fa-3x"></i>
         </div>
       </div>
-    
-      <div class="fixed-background">
-        
-        <div class="row dark">
-
-        </div> <!-- end row-dark section -->
-        
-        
-          <div class="fixed-wrap">
-            <div class="fixed">
-    
-            </div>
-          </div>
-        
-
-      </div> <!-- end fixed-background section -->
-
     </div>
-    <!-- end resources section -->
+    <!-- end portfolio section -->
 
-    <!-- start client section -->
-    <div id="client" class="offset">
-
-    </div>
-    <!-- end client section --> 
-    
     <!-- start contact section -->
     <div id="contact" class="offset">
       <footer>
         <div class="row justify-content-center">
           <div class="col-md-5 text-center">
             <strong>Contact Info</strong>
-            <p>(###) ###-####<br>email@####.com</p>
-            <a href="" target="_blank"><i id="icon" class="fab fa-facebook-square fa-4x"></i></a>
-            <a href="" target="_blank"><i id="icon" class="fab fa-twitter-square fa-4x"></i></a>
-            <a href="" target="_blank"><i id="icon" class="fab fa-instagram fa-4x"></i></a>
+            <p>(###) ###-####<br />email@####.com</p>
+            <a href="" target="_blank"
+              ><i id="icon" class="fab fa-facebook-square fa-4x"></i
+            ></a>
+            <a href="" target="_blank"
+              ><i id="icon" class="fab fa-twitter-square fa-4x"></i
+            ></a>
+            <a href="" target="_blank"
+              ><i id="icon" class="fab fa-instagram fa-4x"></i
+            ></a>
           </div>
 
-          <hr class="socket">
+          <hr class="socket" />
           James Johnson&copy; 2021
         </div>
       </footer>
