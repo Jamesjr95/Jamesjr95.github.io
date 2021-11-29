@@ -22,11 +22,12 @@
       crossorigin="anonymous"
     />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbarResponsive">
+  <body data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="50">
     <!-- start home section -->
-    <div id="home"></div>
+    <div id="home">
     <!-- navigation -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
       <button 
@@ -66,7 +67,7 @@
     </video>
 
     <!-- end of navigation -->
-
+  </div>
     <!-- start landing page section -->
     <div class="container-fluid-md">
       <div class="caption text-center">
@@ -82,7 +83,7 @@
     <!-- end home section -->
 
     <!-- start about section -->
-    <div id="about" class="col-12 narrow text-center" class="offset">
+    <div id="about" class="col-12 narrow text-center">
       <!-- start jumbotron -->
       <div class="jumbotron">
         <div class="narrow">
@@ -141,9 +142,9 @@
     <!-- end about section -->
 
     <!-- start portfolio section -->
-    <div id="portfolio" class="offset"> <!--git rid of this to make button work the offset-->
+    <div id="portfolio"> <!--git rid of this to make button work the offset-->
       <div class="col-12 text-center">
-        <h3 class="heading">Portfolio</h3>
+        <h3 class="heading mt-4">Portfolio</h3>
         <div class="heading-underline"></div>
       </div>
 
@@ -167,45 +168,43 @@
     
     
     
-    <div id="contact" class="offset">
+    <div id="contact" class="">
       <footer>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
           <div class="col-md-5 text-center">
             <div class="col-12 text-center">
               <h3 class="heading">Contact</h3>
               <div class="underline-contact"></div>
-              <p>Have a question or want to work together?</p>
+              <div class="quest pt-5">
+              <p >Have a question or want to work together?</p>
+            </div>
             </div>
          
-        
+            <div class="w-50 mx-auto">
             <form id="form-group">
-              <div id="frm" class="form-group">
+              <div id="frm" class="form-group my-1">
                 <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
               </div>
-              <div id="frm" class="form-group">
+              <div id="frm" class="form-group my-1">
                 <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
               </div>
              
-              <div id="frm" class="form-group">
+              <div id="frm" class="form-group my-1">
                 <textarea class="form-control" id="form-group" placeholder="Enter message here" rows="3"></textarea>
               </div>
-              <button id="frm-btn" type="submit" class="btn btn-primary">Submit</button>
+              <button id="frm-btn" type="submit" class="btn btn-primary my-2 mx-auto">Submit</button>
             </form>
+          </div>
           
 
             
-            
-            <a href="" target="_blank"
-              ><i id="icon" class="fab fa-facebook-square fa-4x"></i
-            ></a>
-            <a href="" target="_blank"
-              ><i id="icon" class="fab fa-twitter-square fa-4x"></i
-            ></a>
-            <a href="" target="_blank"
-              ><i id="icon" class="fab fa-instagram fa-4x"></i
-            ></a>
-          </div>
-
+            <div class="icon pt-5">
+          <a href="#" class='bx bxl-facebook bx-fade-up-hover bx-lg' ></a>
+          <a href="#" class='bx bxl-github bx-fade-up-hover bx-lg' ></a>
+          <a href="#" class="bx bxl-twitter bx-fade-up-hover bx-lg"></a>
+          <a href="#" class='bx bxl-linkedin bx-fade-up-hover bx-lg' ></a>
+        </div>
+        </div>
           <hr class="socket" />
           James Johnson&copy; 2021
         </div>

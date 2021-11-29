@@ -2,14 +2,10 @@
 
 * {
   font-family: 'Dosis', sans-serif;
+  overflow-x: hidden;
 }
 
-.offset::before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -4rem;
-}
+
 
 /* navigation */
 .navbar-custom {
@@ -21,7 +17,6 @@
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   font-weight: bolder;
-  z-index: 2;
 }
 
 .navbar nav li {
@@ -117,11 +112,7 @@ span{
 
 /* project section */
 
-.jumbotron {
-  margin-bottom: 0;
-  padding: 2rem 0 3.5rem;
-  border-radius: 0;
-}
+
 
 h3.heading {
   font-size: 2.4rem;
@@ -219,16 +210,21 @@ footer {
   padding: 2rem 0 2rem;
 }
 
-footer a {
-  color: white;
+.bx{
+  
+  color: red;
+}
+
+.bx:hover{
+  color: red;
+  animation-duration: 1s;
   
 }
 
 
-
-#icon:hover {
+/* #icon:hover {
   color:red;
-}
+} */
 
 hr.socket {
   width: 100%;
@@ -308,5 +304,4 @@ hr.socket {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
 
