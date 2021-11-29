@@ -52,7 +52,7 @@
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 38%;
+  top: 46%;
   color: white;
   text-transform: uppercase;
 }
@@ -81,9 +81,9 @@ span {
   font-weight: lighter;
 }
 
-.btn-lg:hover {
+.btn-lg:hover,#frm-btn:hover {
   transition-delay: 0.2s;
-  background-color: rgba(255, 255, 255, 0.226);
+  background-color: rgba(255, 255, 255, 0.322);
 }
 
 /* about section */
@@ -176,9 +176,9 @@ h3.heading {
   border-width: medium;
 }
 
-#frm-btn:hover {
+/* #frm-btn:hover {
   background-color: rgba(255, 255, 255, 0.438);
-}
+} */
 
 footer {
   background-color: #252934;
