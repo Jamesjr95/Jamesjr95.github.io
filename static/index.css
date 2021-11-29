@@ -7,7 +7,7 @@
 
 /* navigation */
 .navbar-custom {
-  background-color: rgba(255, 255, 255, 0.041);
+  background-color: rgba(255, 255, 255, 0.171);
 }
 
 .navbar {
@@ -36,6 +36,7 @@
   color: red;
 }
 
+
 /* landing page */
 
 #myVideo {
@@ -44,7 +45,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: -1;
 }
 
