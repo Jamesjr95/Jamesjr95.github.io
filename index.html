@@ -21,53 +21,61 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="50">
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarResponsive"
+    data-bs-offset="50"
+  >
     <!-- start home section -->
     <div id="home">
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <button 
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="navbar-collapse collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <video autoplay muted loop id="myVideo">
-      <source
-        src="./static/media/pexels-cottonbro-9665235.mp4"
-        type="video/mp4"
-      />
-    </video>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="./static/media/pexels-cottonbro-9665235.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-    <!-- end of navigation -->
-  </div>
+      <!-- end of navigation -->
+    </div>
     <!-- start landing page section -->
     <div class="container-fluid-md">
       <div class="caption text-center">
@@ -75,7 +83,9 @@
           Hello, I'm <span>James</span>.<br />
           I'm a Software Developer.
         </h1>
-        <a id="fade-in-text"class="btn outline-light btn-lg" href="#portfolio">View my work</a>
+        <a id="fade-in-text" class="btn outline-light btn-lg" href="#portfolio"
+          >View my work</a
+        >
       </div>
     </div>
     <!-- end landing page section -->
@@ -142,7 +152,8 @@
     <!-- end about section -->
 
     <!-- start portfolio section -->
-    <div id="portfolio"> <!--git rid of this to make button work the offset-->
+    <div id="portfolio">
+      <!--git rid of this to make button work the offset-->
       <div class="col-12 text-center">
         <h3 class="heading mt-4">Portfolio</h3>
         <div class="heading-underline"></div>
@@ -157,54 +168,71 @@
     </div>
     <!-- end portfolio section -->
 
-    <div id="test" class="row text-center ">
-      <div class="col-12 ">
-        
-        <button  type="button" class="btn"><i class='bx bxs-chevrons-up bx-lg'></i></button>
+    <div id="test" class="row text-center">
+      <div class="col-12">
+        <button type="button" class="btn">
+          <i class="bx bxs-chevrons-up bx-lg"></i>
+        </button>
       </div>
     </div>
     <!-- start contact section -->
-    
-    
-    
-    
+
     <div id="contact" class="">
       <footer>
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center">
           <div class="col-md-5 text-center">
             <div class="col-12 text-center">
               <h3 class="heading">Contact</h3>
               <div class="underline-contact"></div>
               <div class="quest pt-5">
-              <p >Have a question or want to work together?</p>
+                <p>Have a question or want to work together?</p>
+              </div>
             </div>
-            </div>
-         
-            <div class="w-50 mx-auto">
-            <form id="form-group">
-              <div id="frm" class="form-group my-1">
-                <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
-              </div>
-              <div id="frm" class="form-group my-1">
-                <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
-              </div>
-             
-              <div id="frm" class="form-group my-1">
-                <textarea class="form-control" id="form-group" placeholder="Enter message here" rows="3"></textarea>
-              </div>
-              <button id="frm-btn" type="submit" class="btn btn-primary my-2 mx-auto">Submit</button>
-            </form>
-          </div>
-          
 
-            
+            <div class="w-50 mx-auto">
+              <form id="form-group">
+                <div id="frm" class="form-group my-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="form-group"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div id="frm" class="form-group my-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="form-group"
+                    placeholder="name@example.com"
+                  />
+                </div>
+
+                <div id="frm" class="form-group my-1">
+                  <textarea
+                    class="form-control"
+                    id="form-group"
+                    placeholder="Enter message here"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button
+                  id="frm-btn"
+                  type="submit"
+                  class="btn btn-primary my-2 mx-auto"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
             <div class="icon pt-5">
-          <a href="#" class='bx bxl-facebook bx-fade-up-hover bx-lg' ></a>
-          <a href="#" class='bx bxl-github bx-fade-up-hover bx-lg' ></a>
-          <a href="#" class="bx bxl-twitter bx-fade-up-hover bx-lg"></a>
-          <a href="#" class='bx bxl-linkedin bx-fade-up-hover bx-lg' ></a>
-        </div>
-        </div>
+              <a href="#" class="bx bxl-facebook bx-fade-up-hover bx-lg"></a>
+              <a href="#" class="bx bxl-github bx-fade-up-hover bx-lg"></a>
+              <a href="#" class="bx bxl-twitter bx-fade-up-hover bx-lg"></a>
+              <a href="#" class="bx bxl-linkedin bx-fade-up-hover bx-lg"></a>
+            </div>
+          </div>
           <hr class="socket" />
           James Johnson&copy; 2021
         </div>
