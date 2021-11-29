@@ -21,13 +21,14 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body data-spy="scroll" data-target="#navbarResponsive">
     <!-- start home section -->
     <div id="home"></div>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top ">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
       <button
         class="navbar-toggler"
         type="button"
@@ -41,7 +42,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto ">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
@@ -69,11 +70,11 @@
     <!-- start landing page section -->
     <div class="container-fluid">
       <div class="caption text-center">
-        <h1>
+        <h1 id="fade-in-text">
           Hello, I'm <span>James</span>.<br />
           I'm a Software Developer.
         </h1>
-        <a class="btn outline-light btn-lg" href="#portfolio">View my work</a>
+        <a id="fade-in-text"class="btn outline-light btn-lg" href="#portfolio">View my work</a>
       </div>
     </div>
     <!-- end landing page section -->
@@ -155,13 +156,45 @@
     </div>
     <!-- end portfolio section -->
 
+    <div id="test" class="row text-center ">
+      <div class="col-12 ">
+        
+        <button  type="button" class="btn"><i class='bx bxs-chevrons-up bx-lg'></i></button>
+      </div>
+    </div>
     <!-- start contact section -->
+    
+    
+    
+    
     <div id="contact" class="offset">
       <footer>
         <div class="row justify-content-center">
           <div class="col-md-5 text-center">
-            <strong>Contact Info</strong>
-            <p>(###) ###-####<br />email@####.com</p>
+            <div class="col-12 text-center">
+              <h3 class="heading">Contact</h3>
+              <div class="underline-contact"></div>
+              <p>Have a question or want to work together?</p>
+            </div>
+         
+        
+            <form id="form-group">
+              <div id="frm" class="form-group">
+                <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
+              </div>
+              <div id="frm" class="form-group">
+                <input type="email" class="form-control" id="form-group" placeholder="name@example.com">
+              </div>
+             
+              <div id="frm" class="form-group">
+                <textarea class="form-control" id="form-group" placeholder="Enter message here" rows="3"></textarea>
+              </div>
+              <button id="frm-btn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          
+
+            
+            
             <a href="" target="_blank"
               ><i id="icon" class="fab fa-facebook-square fa-4x"></i
             ></a>
