@@ -3,7 +3,6 @@
 * {
   font-family: "Dosis", sans-serif;
   overflow-x: hidden;
-  
 }
 
 /* navigation */
@@ -33,17 +32,16 @@
   color: red;
 }
 
-
 /* landing page */
 
-.full-screen-video-container{
+.full-screen-video-container {
   position: relative;
   height: 100vh;
   width: 100vw;
-  overflow:hidden
+  overflow: hidden;
 }
 
-.full-screen-video-container video{
+.full-screen-video-container video {
   z-index: -1;
   position: absolute;
   width: auto;
@@ -88,7 +86,8 @@ span {
   font-weight: lighter;
 }
 
-.btn-lg:hover,#frm-btn:hover {
+.btn-lg:hover,
+#frm-btn:hover {
   transition-delay: 0.2s;
   background-color: rgba(255, 255, 255, 0.322);
 }
@@ -107,7 +106,7 @@ span {
 
 /* project section */
 
-.project{
+.project {
   overflow-y: hidden;
 }
 h3.heading {
@@ -115,7 +114,7 @@ h3.heading {
   text-transform: uppercase;
   /* margin-bottom: 1.9rem; */
   font-weight: bolder;
-  overflow-y:hidden
+  overflow-y: hidden;
 }
 
 .heading-underline {
@@ -149,7 +148,6 @@ h3.heading {
 
 /* contact section */
 
-
 .underline-contact {
   width: 3rem;
   height: 0.3rem;
@@ -159,7 +157,6 @@ h3.heading {
 
 #btn-chevron {
   background-color: #f5f5f5;
-  
 }
 
 /* contact form */
@@ -183,13 +180,14 @@ h3.heading {
   border-width: medium;
 }
 
-
 footer {
   background-color: #252934;
   color: white;
   padding: 2rem 0 2rem;
 }
 
+
+/* social media links */
 .bx {
   color: red;
 }
@@ -198,7 +196,6 @@ footer {
   color: red;
   animation-duration: 1s;
 }
-
 
 hr.socket {
   width: 100%;
@@ -220,7 +217,6 @@ hr.socket {
     font-size: 1rem;
     background-color: black;
   }
-
 }
 /* animations */
 
@@ -276,5 +272,3 @@ hr.socket {
     opacity: 1;
   }
 }
-
-
