@@ -3,6 +3,7 @@
 * {
   font-family: "Dosis", sans-serif;
   overflow-x: hidden;
+  
 }
 
 /* navigation */
@@ -17,13 +18,9 @@
   font-weight: bolder;
 }
 
-.navbar nav li {
-  padding-right: 0.7rem;
-}
-
 .navbar-dark .navbar-nav .nav-link {
   color: black;
-  padding-top: 0.8rem;
+  padding-top: 0.5rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -39,14 +36,23 @@
 
 /* landing page */
 
-#myVideo {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.9;
+.full-screen-video-container{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow:hidden
+}
+
+.full-screen-video-container video{
   z-index: -1;
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .caption {
@@ -76,7 +82,7 @@ span {
   border-radius: 0;
   padding: 0.6rem 1.3rem;
   font-size: 1.1rem;
-  background-color: rgba(0, 0, 0, 0.411);
+  background-color: rgba(246, 255, 254, 0.424);
   border-color: white;
   opacity: 0.9;
   font-weight: lighter;
@@ -101,11 +107,15 @@ span {
 
 /* project section */
 
+.project{
+  overflow-y: hidden;
+}
 h3.heading {
   font-size: 2.4rem;
   text-transform: uppercase;
-  margin-bottom: 1.9rem;
+  /* margin-bottom: 1.9rem; */
   font-weight: bolder;
+  overflow-y:hidden
 }
 
 .heading-underline {
@@ -138,10 +148,7 @@ h3.heading {
 }
 
 /* contact section */
-/* 
-#btn{
- 
-} */
+
 
 .underline-contact {
   width: 3rem;
@@ -150,10 +157,9 @@ h3.heading {
   margin: 0 auto 2rem;
 }
 
-#test {
+#btn-chevron {
   background-color: #f5f5f5;
-  /* width: 20px;
-  height: 20px; */
+  
 }
 
 /* contact form */
@@ -177,9 +183,6 @@ h3.heading {
   border-width: medium;
 }
 
-/* #frm-btn:hover {
-  background-color: rgba(255, 255, 255, 0.438);
-} */
 
 footer {
   background-color: #252934;
@@ -196,9 +199,6 @@ footer {
   animation-duration: 1s;
 }
 
-/* #icon:hover {
-  color:red;
-} */
 
 hr.socket {
   width: 100%;
@@ -211,9 +211,7 @@ hr.socket {
 @media (max-width: 767px) {
   .caption h1 {
     font-size: 1.3rem;
-
     letter-spacing: 0.15rem;
-
     padding-bottom: 0.5rem;
   }
 
@@ -222,28 +220,11 @@ hr.socket {
     font-size: 1rem;
     background-color: black;
   }
-}
 
-@media (min-aspect-ratio: 16/9) {
-  #myVideo {
-    width: 100%;
-    height: auto;
-  }
 }
-@media (max-aspect-ratio: 16/9) {
-  #myVideo {
-    width: auto;
-    height: 100%;
-  }
-}
-
 /* animations */
 
 #fade-in-text {
-  /* display: inline-block; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-size: 150px; */
-  /* color: black; */
   animation: fadeIn linear 4s;
   -webkit-animation: fadeIn linear 4s;
   -moz-animation: fadeIn linear 4s;
@@ -295,10 +276,5 @@ hr.socket {
     opacity: 1;
   }
 }
-
-
-
-
-
 
 
