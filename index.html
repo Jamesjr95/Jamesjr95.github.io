@@ -12,10 +12,24 @@
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="/static/index.css" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-</head>
+  <body
+
+  >
+    <!-- start home section -->
+    <div id="home">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top p-2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="50">
   <!-- start home section -->
@@ -90,24 +104,92 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fas fa-graduation-cap fa-4x" data-fa-transform="shrink-3 up-5"></i>
-              <h3>Love learning</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus, harum.
-              </p>
+          <!-- end of row -->
+        </div>
+        <!-- end narrow -->
+      </div>
+      <!-- end jumbotron  -->
+    </div>
+    <!-- end about section -->
+
+    <!-- start portfolio section -->
+    <div id="portfolio">
+      <div class="col-12 text-center">
+        <h3 class="heading mt-4">Portfolio</h3>
+        <div class="heading-underline"></div>
+      </div>
+
+      <div class="col-12 text-center project">
+        <h3>Project</h3>
+        <div class="project">
+          <i class="fas fa-code fa-3x"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end portfolio section -->
+
+    <div id="btn-chevron" class="row text-center">
+      <div class="col-12">
+        <button type="button" class="btn">
+          <a href="#home">
+          <i class="bx bxs-chevrons-up bx-lg"></i></a>
+        </button>
+      </div>
+    </div>
+    <!-- start contact section -->
+
+    <div id="contact" class="">
+      <footer>
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center">
+            <div class="col-12 text-center">
+              <h3 class="heading">Contact</h3>
+              <div class="underline-contact"></div>
+              <div class="quest pt-5">
+                <p>Have a question or want to work together?</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fas fa-puzzle-piece fa-4x" data-fa-transform="shrink-3 up-5"></i>
-              <h3>Love solving puzzles</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus, harum.
-              </p>
+
+            <div class="w-50 mx-auto">
+              <form id="form-group">
+                <div id="frm" class="form-group my-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="form-group"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div id="frm" class="form-group my-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="form-group"
+                    placeholder="email@example.com"
+                  />
+                </div>
+
+                <div id="frm" class="form-group my-1">
+                  <textarea
+                    class="form-control"
+                    id="form-group"
+                    placeholder="Enter message here"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button
+                  id="frm-btn"
+                  type="submit"
+                  class="btn btn-primary my-2 mx-auto"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <div class="icon pt-5">
+              <a href="#" class="bx bxl-github bx-fade-up-hover bx-lg"></a>
+              <a href="#" class="bx bxl-linkedin bx-fade-up-hover bx-lg"></a>
             </div>
           </div>
         </div>
