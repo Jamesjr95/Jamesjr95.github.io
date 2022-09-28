@@ -5,22 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Portfolio</title>
 
   <link rel="stylesheet" href="/static/normalize.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="/static/index.css" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/ff1d9ad615.js" crossorigin="anonymous"></script>
+
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 
-<body data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="50">
+<body data-bs-spy="scroll" data-bs-target="#navbarResponsive" data-bs-offset="">
   <div id="home">
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,36 +68,54 @@
         <div class="row text-center">
           <div class="col-md-4">
             <div class="about">
-              <i class="fas fa-users fa-4x" data-fa-transform="shrink-3 up-5"></i>
+              <i class="fa-solid fa-people-group fa-3x"></i>
               <h3>Team player</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus, harum.
+                I enjoy working callaboratively and have strong communication skills.
               </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="about">
-              <i class="fas fa-users fa-4x" data-fa-transform="shrink-3 up-5"></i>
+              <i class="fa-solid fa-book fa-3x"></i>
               <h3>Loves Learning</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus, harum.
+                Motivated to advance and expand my skill set through challenging projects.
               </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="about">
-              <i class="fas fa-users fa-4x" data-fa-transform="shrink-3 up-5"></i>
+              <i class="fa-solid fa-magnifying-glass fa-3x"></i>
               <h3>Attention to Detail</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus, harum.
+                My passion is creating clean and scalable code for complex problems using modern industry standards.
               </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <h3 id="" class="heading">Skills</h3>
+    <div class="heading-underline"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <h4>Programming Languages</h4>
+        <ul>
+          <li>Python</li>
+          <li>javascript</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <h4>Frameworks</h4>
+      <ul class="">
+        <li>Django</li>
+        <li>Django Rest API</li>
+        <li>Vue.js</li>
+        <li>SQLite</li>
+        <li>Bootstrap</li>
+        <li>Materialize</li>
+      </ul>
     </div>
   </div>
   <div id="portfolio">
@@ -105,15 +123,22 @@
       <h3 class="heading mt-4">Portfolio</h3>
       <div class="heading-underline"></div>
     </div>
-
-    <div class="col-12 text-center project">
-      <h3>Project</h3>
-      <div class="project">
-        <i class="fas fa-code fa-3x"></i>
+    <div class="row justify-content-center">
+      <div class="col-4 text-center project">
+        <h4>django marvel</h4>
+        <div class="project">
+        </div>
+        <a href="https://github.com/Jamesjr95/django_marvel"><img src="./static/media/capstone_project.PNG" alt="" style="height: 100px;"></a>
+      </div>
+      <div class="col-4 text-center project">
+        <h4>django pokemon</h4>
+        <div class="project">
+        </div>
+        <a href="https://github.com/Jamesjr95/django_pokemon"><img src="./static/media/pokemon_project.PNG" alt="" style="height: 100px;"></a>
       </div>
     </div>
   </div>
-  <div id="btn-chevron" class="row text-center">
+  <div id="" class="row text-center">
     <div class="col-12">
       <button type="button" class="btn">
         <a href="#home"><i class="bx bxs-chevrons-up bx-lg"></i></a>
@@ -152,7 +177,8 @@
 
           <div class="icon pt-5">
             <a href="https://github.com/Jamesjr95?tab=repositories" class="bx bxl-github bx-fade-up-hover bx-lg"></a>
-            <a href="https://www.linkedin.com/in/james-johnson-487228200/" class="bx bxl-linkedin bx-fade-up-hover bx-lg"></a>
+            <a href="https://www.linkedin.com/in/james-johnson-487228200/"
+              class="bx bxl-linkedin bx-fade-up-hover bx-lg"></a>
           </div>
         </div>
         <hr class="socket" />
