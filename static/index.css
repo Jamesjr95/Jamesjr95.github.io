@@ -69,15 +69,6 @@ span {
 }
 
 
-.narrow {
-  width: 75%;
-  margin: 1.5rem auto;
-  /* padding-top: 1rem; */
-}
-
-.narrow h1 {
-  font-size: 2.4rem;
-}
 
 /* project section */
 
@@ -112,9 +103,6 @@ h3.heading {
 
 /* project section */
 
-#portfolio {
-  height: 50vh;
-}
 
 .portfolio h3 {
   font-size: 1.3rem;
@@ -133,15 +121,15 @@ h3.heading {
 /* contact form */
 
 #frm {
-  padding-top: 5px;
+  padding-top: 2rem;
 }
 
 /* form button */
 
 #frm-btn {
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   background-color: rgba(255, 255, 255, 0);
   color: white;
   border-style: solid;

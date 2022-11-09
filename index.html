@@ -27,7 +27,7 @@
     </div>
   </div>
   <header
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-center py-3 mb-4 border bg-dark sticky-top fs-5">
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-center py-3 mb-4 bg-dark sticky-top fs-5">
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="scroller">
       <li><a href="#about" class="nav-link px-2 link-light">About</a></li>
       <li><a href="#portfolio" class="nav-link px-2 link-light">Portfolio</a></li>
@@ -43,50 +43,50 @@
       <a id="" class="btn outline-light btn-lg" href="#portfolio">View my work</a>
     </div>
   </div>
-  <div id="about" style="height: 60px;"></div>
-  <div class="col-12 narrow text-center mb-4">
+  <div id="about" style="height: 5rem;"></div>
+  <div class="container text-center">
     <div class="jumbotron">
-      <div class="narrow">
-        <div class="col-12">
-          <h3 class="heading">About</h3>
-          <div class="heading-underline"></div>
+      <div class="col-12">
+        <h3 class="heading">About</h3>
+        <div class="heading-underline"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div id="about">
+            <i class="fa-solid fa-people-group fa-3x"></i>
+            <h3>Team player</h3>
+            <p>
+              I enjoy working callaboratively and have strong communication skills.
+            </p>
+          </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <div class="">
-              <i class="fa-solid fa-people-group fa-3x"></i>
-              <h3>Team player</h3>
-              <p>
-                I enjoy working callaboratively and have strong communication skills.
-              </p>
-            </div>
+        <div class="col-md-4">
+          <div class="about">
+            <i class="fa-solid fa-book fa-3x"></i>
+            <h3>Loves Learning</h3>
+            <p>
+              Motivated to advance and expand my skill set through challenging projects.
+            </p>
           </div>
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa-solid fa-book fa-3x"></i>
-              <h3>Loves Learning</h3>
-              <p>
-                Motivated to advance and expand my skill set through challenging projects.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-              <h3>Attention to Detail</h3>
-              <p>
-                My passion is creating clean and scalable code for complex problems using modern industry standards.
-              </p>
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="about">
+            <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+            <h3>Attention to Detail</h3>
+            <p>
+              My passion is creating clean and scalable code for complex problems using modern industry standards.
+            </p>
           </div>
         </div>
       </div>
     </div>
     <hr>
-    <h3 id="" class="heading mt-4">Skills</h3>
-    <div class="heading-underline"></div>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
+  </div>
+  <h3 id="" class="heading mt-4 text-center">Skills</h3>
+  <div class="heading-underline"></div>
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-4">
         <h4>Programming Languages</h4>
         <ul>
           <li>Python</li>
@@ -94,48 +94,46 @@
           <li>HTML/CSS</li>
         </ul>
       </div>
-      <h4>Frameworks</h4>
-      <ul>
-        <li>Django</li>
-        <li>Django Rest API</li>
-        <li>Vue.js</li>
-        <li>SQLite</li>
-        <li>Bootstrap</li>
-        <li>Materialize</li>
-      </ul>
+      <div class="col-4">
+        <h4>Frameworks</h4>
+        <ul>
+          <li>Django</li>
+          <li>Django Rest API</li>
+          <li>Vue.js</li>
+          <li>SQLite</li>
+          <li>Bootstrap</li>
+          <li>Materialize</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div id="portfolio" style="height: 60px;"></div>
-  <div class="narrow">
+  <div id="portfolio" style="height: 5rem;"></div>
+  <div class="container">
     <hr>
-    <div style="height: 55%;">
-      <div class="col-12 text-center">
-        <h3 class="heading mt-4">Portfolio</h3>
-        <div class="heading-underline"></div>
+    <div>
+      <h3 class="heading mt-4 text-center">Portfolio</h3>
+    </div>
+    <div class="heading-underline"></div>
+    <div class="row flex-md-row flex-column align-items-center text-center justify-content-md-center">
+      <div class="col-4 text-center project m-3 overflow-hidden">
+        <h4>Django Marvel</h4>
+
+        <a href="https://github.com/Jamesjr95/django_marvel"><img src="./static/media/capstone_project.PNG" alt=""
+            style="height: 15rem;"></a>
       </div>
-      <div class="row justify-content-center flex-column flex-md-row align-items-center">
-        <div class="col-4 text-center project m-3 overflow-hidden">
-          <h4>django marvel</h4>
+      <div class="col-4 text-center project m-3 overflow-hidden">
+        <h4>Django Pokemon</h4>
 
-          <a href="https://github.com/Jamesjr95/django_marvel"><img src="./static/media/capstone_project.PNG" alt=""
-              style="height: 100px;"></a>
-        </div>
-        <div class="col-4 text-center project m-3 overflow-hidden">
-          <h4>django pokemon</h4>
-
-          <a href="https://github.com/Jamesjr95/django_pokemon"><img src="./static/media/pokemon_project.PNG" alt=""
-              style="height: 100px;"></a>
-        </div>
+        <a href="https://github.com/Jamesjr95/django_pokemon"><img src="./static/media/pokemon_project.PNG" alt=""
+            style="height: 15rem;"></a>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row text-center">
-      <div class="col-12 d-block">
-        <button type="button shadow-none" class="btn">
-          <a href="#home"><i class="bx bxs-chevrons-up bx-lg"></i></a>
-        </button>
-      </div>
+  <div class="row text-center align-items-end" style="height: 20rem;">
+    <div class="col-12 d-block">
+      <button type="button shadow-none" class="btn">
+        <a href="#home"><i class="bx bxs-chevrons-up bx-lg"></i></a>
+      </button>
     </div>
   </div>
   <div id="contact" class="">
