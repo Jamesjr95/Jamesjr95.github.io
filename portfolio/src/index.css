@@ -12,3 +12,15 @@
         font-family: 'Raleway', sans-serif;
     }
 }
+
+.nav-item-hover:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+
+.nav-item-static {
+    border-bottom-style: solid;
+    border-bottom-width: .4rem;
+    border-bottom-color: transparent;
+
+}
