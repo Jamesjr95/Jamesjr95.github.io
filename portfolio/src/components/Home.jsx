@@ -3,22 +3,23 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Home = () => {
     return (
-        <div name='home' className='h-screen w-full bg-gradient-to-b from-black to-gray-800'>
-            <div className='max-w-screen-lg'>
-                <div>
-                    <h2>
-                        I'm a Full Stack Developer
+        // from black, medium point is black (via-black), to gray at the end for the gradient
+        <div name='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
+            <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4'>
+                <div className='flex flex-col justify-center h-full'>
+                    <h2 className='text-4xl sm:text-7xl font-bold text-white'>
+                        I'm a Full Stack <br></br>Developer
                     </h2>
-                    <p>
-                        I am a passionate web developer focused on creating scalable web applications and working across the full stack. Currently looking for new oppurtunities.
+                    <p className='text-gray-500 py-4 max-w-md'>
+                        I am a passionate web developer focused on creating scalable web applications and working across the full stack.
                     </p>
                     <div>
-                        <button>
+                        {/* group is a tailwind class that groups content in relation to the parent*/}
+                        <button className='group text-white w-fit px-6 py-3 my-2 flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 button-border'>
                             Portfolio
-                            <span>
-                                <AiOutlineArrowRight />
+                            <span className='group-hover:rotate-90 duration-300'>
+                                <AiOutlineArrowRight size={20} className='ml-1'/>
                             </span>
-
                         </button>
                     </div>
                 </div>
