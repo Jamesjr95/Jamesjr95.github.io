@@ -1,25 +1,20 @@
 import React from 'react'
-import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Home = () => {
     return (
-        // from black, medium point is black (via-black), to gray at the end for the gradient
-        <div name='home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
+        <div name='home' className='h-screen w-full tone'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-white'>
+                    <h2 className='text-4xl sm:text-7xl font-bold text-black'>
                         I'm a Full Stack <br></br>Developer
                     </h2>
-                    <p className='text-gray-500 py-4 max-w-md'>
+                    <p className='text-black py-4 max-w-md'>
                         I am a passionate web developer focused on creating scalable web applications and working across the full stack.
                     </p>
                     <div>
                         {/* group is a tailwind class that groups content in relation to the parent*/}
-                        <button className='group text-white w-fit px-6 py-3 my-2 flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 button-border'>
+                        <button className='group w-fit px-6 text-white py-3 my-2 flex items-center bg-black hover:bg-gradient-to-r from-blue-400 via-blue-400 to-blue-300 button-effect'>
                             Portfolio
-                            <span className='group-hover:rotate-90 duration-300'>
-                                <AiOutlineArrowRight size={20} className='ml-1'/>
-                            </span>
                         </button>
                     </div>
                 </div>

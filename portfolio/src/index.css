@@ -10,26 +10,26 @@
     }
 }
 
-.nav-item:hover {
-    border-bottom-style: solid;
-    border-bottom-color: #fff;
+
+.tone {
+    background-color: #f1f5f9;
 }
 
-.nav-item {
-    border-bottom-style: solid;
-    border-bottom-width: .4rem;
-    border-bottom-color: transparent;
+.socials {
+    transition: all 300ms ease-in-out;
+}
+
+.socials:hover {
+    margin-left: -10px;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.button-effect {
+    transition: all 400ms ease-in-out;
 
 }
 
-.button-border:hover {
-    border-style: solid;
-    border-color: white;
-
-}
-
-.button-border {
-    border-style: solid;
-    border-color: rgba(255, 0, 0, .5);
-    border-width: .1rem;
+.button-effect:hover {
+    border-radius: 2rem;
 }

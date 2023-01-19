@@ -12,7 +12,7 @@ const SocialLinks = () => {
                 LinkedIn <FaLinkedin size={30}/>
                 </>
             ),
-            href: 'https//linkedin.com/in/james-johnson-487228200/',
+            href: 'https://www.linkedin.com/in/james-johnson-487228200/',
             style: 'rounded-tr-md'
         },
         {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
                 Github<FaGithub size={30}/>
                 </>
             ),
-            href: 'https//github.com/Jamesjr95',
+            href: 'https://github.com/Jamesjr95',
         },
         {
             id: 3,
@@ -49,7 +49,7 @@ const SocialLinks = () => {
     <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
         <ul>
             {links.map(({id, child, href, style, download}) => (
-            <li key={id} className='flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] duration-300'>
+            <li key={id} className='flex justify-between items-center w-40 h-14 px-4 bg-black ml-[-100px] socials hover:bg-gradient-to-r from-blue-400 via-blue-400 to-blue-300'>
                 <a href={href} className='flex justify-between items-center w-full text-white' 
                 download={download}
                 target='_blank'
