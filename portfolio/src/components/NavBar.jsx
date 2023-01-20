@@ -36,10 +36,10 @@ const NavBar = () => {
             <ul className='hidden md:flex '>
                 {/* destructuring the array object */}
                 {links.map(({id, link}) =>(
-                    <li key={id} className='mx-4 cursor-pointer capitalize font-medium hover:scale-125 text-black transition duration-400 ease-in-out'>{link}</li>
+                    <li key={id} className='mx-4 cursor-pointer capitalize font-medium hover:scale-110 text-black transition duration-400 ease-in-out'>{link}</li>
                 ))}
             </ul>
-            <div onClick={() => setNav(!nav)} className='cursor-pointer mr-4 z-10 text-gray-500 md:hidden'>
+            <div onClick={() => setNav(!nav)} className='cursor-pointer mr-4 z-10 text-black md:hidden'>
                 {/* the quetsion mark is an inline conditonal statement in javaScript */}
                 {nav ? <FaTimes size={30}/> : <FaBars size={30}/> }
             </div>

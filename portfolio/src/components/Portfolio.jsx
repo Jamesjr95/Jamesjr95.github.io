@@ -2,25 +2,45 @@ import React from 'react'
 import weather from '../assets/portfolio/weather.PNG';
 
 const Portfolio = () => {
+
+  const portfolios = [
+    {
+      id: 1,
+      src: weather,
+      href: 'https://localweatherwatch.netlify.app/',
+      repo: 'https://github.com/Jamesjr95/localweatherwatch'
+    }
+  ]
+
   return (
     <div name='portfolio' className='tone w-full text-black md:h-screen'>
-      <div className='max-w-screen-lg p-4 mx-auto flex-col justify-center w-full h-full'>
+      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-        <p className='text-4xl font-bold inline border-b-4 border-black'>Portfolio</p>
-        <p className='py-6'>Check out some of my work right here</p>
+          <p className='text-4xl font-bold inline border-b-4 border-black'>Portfolio</p>
+          <p className='py-6'>Check out some of my work right here</p>
         </div>
-      </div>
-      
-      <div>
-        <div>
-          <img src={weather} alt="" />
-          <div>
-            <button>Demo</button>
-            <button>Code</button>
-          </div>
+
+
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+          {
+            portfolios.map(({ id, src, href, repo }) => (
+              <div id={id} className='shadow-md shadow-gray-600 rounded-lg'>
+                <img src={src} alt="" className=' rounded-md duration-200 hover:scale-105' />
+                <div className='flex items-center justify-center'>
+                  <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
+                  </a>
+                  <a href={repo}>
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                  </a>
+                </div>
+              </div>
+            ))
+          }
+
         </div>
       </div>
     </div>
+
   )
 }
 
