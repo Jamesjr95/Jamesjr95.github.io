@@ -10,26 +10,3 @@
     }
 }
 
-
-.tone {
-    background-color: #f1f5f9;
-}
-
-.socials {
-    transition: all 300ms ease-in-out;
-}
-
-.socials:hover {
-    margin-left: -10px;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-
-.button-effect {
-    transition: all 400ms ease-in-out;
-
-}
-
-.button-effect:hover {
-    border-radius: 2rem;
-}

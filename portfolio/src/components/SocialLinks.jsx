@@ -42,6 +42,7 @@ const SocialLinks = () => {
             ),
             href: '/resume.pdf',
             download: true,
+            style: "rounded-br-md",
         },
     ]
 
@@ -49,7 +50,8 @@ const SocialLinks = () => {
     <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
         <ul>
             {links.map(({id, child, href, style, download}) => (
-            <li key={id} className='flex justify-between items-center w-40 h-14 px-4 bg-black ml-[-100px] socials hover:bg-gradient-to-r from-blue-400 via-blue-400 to-blue-300'>
+            <li key={id} 
+                className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] bg-gradient-to-r from-cyan-500 to-blue-500 duration-300' + ' ' + style}>
                 <a href={href} className='flex justify-between items-center w-full text-white' 
                 download={download}
                 target='_blank'
