@@ -1,10 +1,10 @@
-// import React, { useState } from 'react'
-// import { FaBars, FaTimes } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../assets/initial.png';
 
 const NavBar = () => {
 
-    // const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false)
 
     const links = [
         {
@@ -27,10 +27,10 @@ const NavBar = () => {
 
     return (
         // <div className='flex justify-end items-center w-full h-20 text-white fixed bg-black px-4'>
-        //     <ul className='hidden md:flex'>
+        //     <ul className='absolute inset-x-0 top-20 flex  flex-col items-center gap-8 bg-slate-800 py-8 opacity-0 transition duration-300 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row md:bg-transparent md:py-0 md:opacity-100'>
         //         {/* destructuring the array object */}
         //         {links.map(({id, link}) =>(
-        //             <li key={id} className='mx-4 cursor-pointer capitalize font-medium hover:scale-110 text-white duration-200'>{link}</li>
+        //             <li key={id} className='text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300 px-2'>{link}</li>
         //         ))}
         //     </ul>
         //     <div onClick={() => setNav(!nav)} className='cursor-pointer mr-4 z-10 text-white md:hidden'>
@@ -46,6 +46,7 @@ const NavBar = () => {
         //     ) }
 
         // </div>
+
         <div className="flex items-center justify-between bg-slate-800 px-32">
             <a href="#">
                 {/* <img src='./src/assets/initial.png' alt="" className='bg-white'/> */}
@@ -57,7 +58,7 @@ const NavBar = () => {
                 <div className="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>
             </label>
             <ul
-                className="absolute inset-x-0 top-20 flex -translate-x-full flex-col items-center gap-8 bg-slate-800 py-8 opacity-0 transition duration-300 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row md:bg-transparent md:py-0 md:opacity-100">
+                className="absolute inset-x-0 top-14 flex -translate-x-full flex-col items-center gap-8 bg-slate-800 py-8 opacity-0 transition duration-100 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row md:bg-transparent md:py-0 md:opacity-100">
                     {links.map(({id, link}) =>(
                     <li key={id} className='text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300 cursor-pointer'>{link}</li>
                 ))}

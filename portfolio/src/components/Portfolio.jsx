@@ -60,7 +60,7 @@ const Portfolio = () => {
           portfolios.map(({ id, src, href, repo }) => (
             <div id={id} className="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
               <img src={src} alt="" className='' />
-              <div className='px-5 py-4 inline-flex'>
+              <div className='py-4 flex items-center justify-center'>
                 <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-white'>Demo</button>
                 </a>
                 <a href={repo}>
@@ -70,8 +70,6 @@ const Portfolio = () => {
             </div>
           ))
         }
-
-
 
       </div>
 
