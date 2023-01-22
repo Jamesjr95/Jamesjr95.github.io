@@ -12,9 +12,9 @@ function App() {
       <Home/>
       <About/>
       <Portfolio/>
-      <Experience/>
+      {/* <Experience/> */}
       
-      <SocialLinks/>
+      {/* <SocialLinks/> */}
     </div>
   );
 }
