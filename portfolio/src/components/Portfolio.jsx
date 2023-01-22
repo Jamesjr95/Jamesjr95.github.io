@@ -52,10 +52,10 @@ const Portfolio = () => {
     //   </div>
     // </div>
 
-    <section name='portfolio' class="px-32 py-16">
-      <h3 class="font-bold text-blue-600 text-2xl text-center" data-aos="fade-up">PORTFOLIO</h3>
-      <h4 class="text-white font-bold text-3xl mt-2 text-center" data-aos="fade-up">LATEST PROJECTS</h4>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+    <div name='portfolio' className="px-32 py-16">
+      <h3 className="font-bold text-blue-600 text-2xl text-center" data-aos="fade-up">PORTFOLIO</h3>
+      <h4 className="text-white font-bold text-3xl mt-2 text-center" data-aos="fade-up">LATEST PROJECTS</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
         {
           portfolios.map(({ id, src, href, repo }) => (
             <div id={id} className="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden" data-aos="zoom-in" data-aos-delay="400">
@@ -73,7 +73,7 @@ const Portfolio = () => {
 
       </div>
 
-    </section>
+    </div>
 
   )
 }
