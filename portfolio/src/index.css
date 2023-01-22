@@ -10,7 +10,9 @@
     }
 }
 
-
+body {
+    background-color: #1d1d20;
+}
 
 .bg-hero-img {
     background: url('./assets/bg-image.png');

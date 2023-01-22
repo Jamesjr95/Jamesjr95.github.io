@@ -1,6 +1,8 @@
 import React from 'react'
 import aboutImage from '../assets/about-image.png'
 
+import { BiTachometer } from 'react-icons/bi'
+
 const About = () => {
 
 
@@ -19,30 +21,18 @@ const About = () => {
         //     </div>
         // </div>
 
-        <div className="text-center border-t-8 h-40">
-            <h3 className="text-center font-bold text-4xl pt-5 text-[#444649]" data-aos="fade-right" data-aos-delay="400">About</h3>
-            <hr className='w-20 text-center mx-auto h-px my-4' data-aos="fade-right" data-aos-delay="500"/>
-        </div>
 
-    //   <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 bg-[#1d1d20] py-16 px-16">
-    //      <img src={aboutImage} alt="" data-aos="fade-up" data-aos-delay="400" />
-    //      <div data-aos="fade-down" data-aos-delay="600">
-    //         <h3 className="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
-    //         <h4 className="text-white font-bold text-3xl mt-2">I'm James Johnson</h4>
-    //         <p className="text-lg text-slate-500 mt-8">
-    //            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quis
-    //            hic! In maiores consequuntur maxime tenetur ipsum quisquam dolore
-    //            sequi? Qui facere est fugit modi incidunt perferendis fugiat
-    //            deleniti aperiam.
-    //         </p>
-    //         <p className="text-lg text-slate-500 mt-2">
-    //            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem nam
-    //            impedit natus quaerat praesentium necessitatibus asperiores officia
-    //            temporibus consequuntur, omnis iste quisquam hic aspernatur quos quo
-    //            repudiandae. Harum, hic placeat.
-    //         </p>
-    //      </div>
-    //   </div>
+          <div name='about' className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-16 px-32">
+             <img src={aboutImage} alt="" data-aos="fade-up" data-aos-delay="400" />
+             <div data-aos="fade-down" data-aos-delay="600">
+                <h3 className="font-bold text-blue-600 text-2xl">ABOUT ME</h3>
+                <h4 className="text-white font-bold text-3xl mt-2">I'm James Johnson</h4>
+                <p className="text-lg text-slate-500 mt-8">
+                   I'm a Full-Stack Developer from Oregon. I have a passion for UI effects, animations, and creating intuitive user experiences.
+                </p>
+
+             </div>
+          </div>
     )
 }
 
