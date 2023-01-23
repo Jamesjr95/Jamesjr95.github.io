@@ -10,7 +10,7 @@ const Home = () => {
     
     useEffect(() => {
         AOS.init();
-    })
+    }, [])
     
 
         const links = [
@@ -77,7 +77,7 @@ const Home = () => {
 
 
         
-    <div className="bg-hero-img object-none">
+    <div name='HOME' className="bg-hero-img object-none">
         <div className="flex items-center justify-center flex-col h-screen">
            <h1 className="text-white font-bold text-4xl md:text-6xl"  data-aos="fade-up" data-aos-delay="200">I'm James</h1>
            <h2 className="text-white text-sm sm:text-lg md:text-xl font-bold mt-4"  data-aos="zoom-in" data-aos-delay="200">

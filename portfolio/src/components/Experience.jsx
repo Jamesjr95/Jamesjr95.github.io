@@ -60,13 +60,13 @@ const Experience = () => {
     ];
 
     return (
-        <div name='experience' className='w-full h-screen px-32'>
+        <div name='EXPERIENCE' className='w-full h-screen px-32'>
             <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
                 <div className=' text-center'>
-                    <p className='text-4xl font-bold p-2 inline text-blue-600' data-aos="fade-up" data-aos-delay="600">Experience</p>
+                    <p className='text-4xl font-bold p-2 inline text-blue-600' data-aos="fade-up" data-aos-delay="300">Experience</p>
                 </div>
 
-                <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0' data-aos="fade-up" data-aos-delay="600">
+                <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0' data-aos="fade-up" data-aos-delay="400">
 
                     {
                         techs.map(({ id, src, title, style }) => (
